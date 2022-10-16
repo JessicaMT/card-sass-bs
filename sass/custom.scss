@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&display=swap');
 
-$font-family: 'Edu NSW ACT Foundation', cursive;
+$font-family-base: 'Edu NSW ACT Foundation', cursive;
 
 $primary:        #fff;
 $purple:        #cf649a;
@@ -8,9 +8,21 @@ $dark:            #222;
 $theme-colors: (
   "primary":    $primary,
   "dark":       $dark,
-  "purple":     $purple
+  "purple":     $purple,
 ) ;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+.flex-center-center{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
+.card { 
+  @extend .bg-dark;
+  @extend .text-light; 
+
+}
